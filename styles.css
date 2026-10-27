@@ -173,9 +173,29 @@ h2 {
 
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  max-width: 860px;
+  grid-template-columns: minmax(220px, 320px) 1fr;
+  gap: 2rem;
+  align-items: center;
+  max-width: 960px;
+}
+
+.about-photo {
+  margin: 0;
+}
+
+.about-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 18%;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  display: block;
+}
+
+.about-copy p:first-child {
+  margin-top: 0;
 }
 
 .skill-list {
@@ -279,6 +299,10 @@ textarea:focus {
   .about-grid,
   .project-grid {
     grid-template-columns: 1fr;
+  }
+
+  .about-photo {
+    max-width: 360px;
   }
 
   .nav-toggle {
