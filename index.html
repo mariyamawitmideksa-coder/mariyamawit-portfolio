@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mariyamawit Mideksa | Software Engineering Student</title>
+    <meta
+      name="description"
+      content="Portfolio of Mariyamawit Mideksa, a software engineering student at Wachamo University."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="#home">MM</a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <p class="eyebrow">Wachamo University</p>
+        <h1>Mariyamawit Mideksa</h1>
+        <p class="lede">
+          Software engineering student building clean, useful web experiences
+          with HTML, CSS, and JavaScript.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View projects</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>About</h2>
+        <div class="about-grid">
+          <p>
+            Hello — I am <strong>Mariyamawit Mideksa</strong>, a software
+            engineering student at <strong>Wachamo University</strong>. I enjoy
+            turning ideas into simple websites and learning how real products
+            are designed, built, and improved.
+          </p>
+          <p>
+            I am currently focused on frontend fundamentals, problem solving,
+            and writing code that is easy to read. This portfolio is a living
+            snapshot of that journey.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skill-list">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Responsive design</li>
+          <li>Git basics</li>
+          <li>Problem solving</li>
+        </ul>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <article class="card">
+            <p class="card-tag">Personal</p>
+            <h3>Student Portfolio</h3>
+            <p>
+              This site — a single-page portfolio that introduces who I am,
+              what I study, and the work I want to share.
+            </p>
+            <p class="card-meta">HTML · CSS · JavaScript</p>
+          </article>
+          <article class="card">
+            <p class="card-tag">In progress</p>
+            <h3>Campus tools</h3>
+            <p>
+              Small web tools for student life — study lists, notes, and
+              simple dashboards. More coming soon.
+            </p>
+            <p class="card-meta">HTML · CSS · JavaScript</p>
+          </article>
+          <article class="card">
+            <p class="card-tag">Learning</p>
+            <h3>Practice playground</h3>
+            <p>
+              Mini experiments I use to practice layout, animation, and
+              DOM scripting while I study.
+            </p>
+            <p class="card-meta">HTML · CSS · JavaScript</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p class="contact-intro">
+          Want to collaborate, share feedback, or just say hello? Send a
+          message.
+        </p>
+        <form id="contact-form" class="contact-form" novalidate>
+          <label>
+            Name
+            <input type="text" name="name" required placeholder="Your name" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required placeholder="you@example.com" />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required placeholder="Write a short message..."></textarea>
+          </label>
+          <button class="btn primary" type="submit">Send message</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        &copy; <span id="year"></span> Mariyamawit Mideksa · Software
+        Engineering · Wachamo University
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
